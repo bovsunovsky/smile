@@ -1,60 +1,33 @@
-<p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
-    </a>
-    <h1 align="center">Yii 2 Advanced Project Template</h1>
-    <br>
-</p>
+Тестовое задание на должность PHP Developer
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+Задание заключается в разработке простого каталога товаров с использованием фреймворка Yii 2. Должны быть реализованы основные сущности, связи и CRUD-операции:
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
+    1. Сущность «Товар»
+        1. Название
+        2. Описание
+        3. Фотографии
+        4. Стоимость
+    2. Сущность «Отзыв о товаре»
+        1. Дата
+        2. Имя пользователя
+        3. Email пользователя
+        4. Текст отзыва
+    3. Сущность «Категория товаров»
+        1. Название
+        2. Описание
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+Добавление / редактирование / удаление информации осуществляется любым пользователем прямо на сайте, без использования административной панели. Вся вводимая информация должна валидироваться. Отзывы о товаре должны отображаться / редактироваться на странице товара.
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+Сайт должен работать на двух языках — русском и английском.
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.com/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.com/yiisoft/yii2-app-advanced)
+Выбор технологий для frontend-а остается на усмотрение разработчика.
 
-DIRECTORY STRUCTURE
--------------------
+Результат необходимо предоставить в виде ссылки на GitHub-репозиторий. Также в проекте должен лежать дамп схемы БД и/или миграции.
 
-```
-common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes    
-console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
-```
+При проверке задания оцениваются:
+    1. Полнота выполнения требований ТЗ
+    2. Корректность работы приложения
+    3. Знание и умение использовать возможности фреймворка
+    4. Чистота и аккуратность кода
+    5. Умение работать с системой контроля версий
+    6. Соблюдение сроков выполнения ТЗ
