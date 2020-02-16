@@ -40,10 +40,9 @@ $lang = Lang::getCurrent()->url;
         ],
     ]);
     $menuItems = [
-        ['label' => 'Товары', 'url' => ['/product/index']],
-        ['label' => 'Категории', 'url' => ['/category/index']],
-        ['label' => 'Обратная связь', 'url' => ['/feedback/index']],
-
+        ['label' => Yii::t('main', 'Товары') , 'url' => ['/product/index']],
+        ['label' => Yii::t('main', 'Категории'), 'url' => ['/category/index']],
+        ['label' => Yii::t('main', 'Обратная связь'), 'url' => ['/feedback/index']],
     ];
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
@@ -51,7 +50,6 @@ $lang = Lang::getCurrent()->url;
     ]);
     NavBar::end();
     ?>
-
 
     <div class="container">
         <?= LangWidget::widget(); ?>

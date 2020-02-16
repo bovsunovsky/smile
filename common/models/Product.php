@@ -43,7 +43,7 @@ class Product extends \yii\db\ActiveRecord
             [['name_en', 'name_ru', 'description_ru', 'description_en', 'status'], 'required'],
             [['description_ru', 'description_en', 'image'], 'string'],
             [['name_en', 'name_ru'], 'string', 'max' => 100],
-            [['imageFile'], 'file', /*'skipOnEmpty' => true, */'extensions' => 'png, jpg, jpeg, gif, pdf'],
+            [['imageFile'], 'file','extensions' => 'png, jpg, jpeg, gif, pdf'],
 
         ];
     }
@@ -55,12 +55,12 @@ class Product extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'category_id' => 'Категория',
-            'name_en' => 'Название En',
-            'name_ru' => 'Название Ru',
-            'description_ru' => 'Описание Ru',
-            'description_en' => 'Описание En',
-            'status' => 'Статус',
+            'category_id' => Yii::t('main', 'Категории'),
+            'name_en' => Yii::t('main', 'Название en'),
+            'name_ru' => Yii::t('main', 'Название ru'),
+            'description_ru' => Yii::t('main', 'Описание ru'),
+            'description_en' => Yii::t('main', 'Описание en'),
+            'status' => Yii::t('main', 'Статус'),
         ];
     }
 

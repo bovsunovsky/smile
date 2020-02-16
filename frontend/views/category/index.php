@@ -7,15 +7,15 @@ use yii\widgets\Pjax;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Категории';
-//$this->params['breadcrumbs'][] = $this->title;
+$this->title = Yii::t('main', 'Категории');
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="category-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Добавить категорию', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('main', 'Создать'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php Pjax::begin(); ?>

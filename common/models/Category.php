@@ -48,11 +48,11 @@ class Category extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name_ru' => 'Название Ru',
-            'name_en' => 'Название En',
-            'description_ru' => 'Описание Ru',
-            'description_en' => 'Описание En',
-            'status' => 'Статус',
+            'name_ru' => Yii::t('main', 'Название ru'),
+            'name_en' => Yii::t('main', 'Название en'),
+            'description_ru' => Yii::t('main', 'Описание ru'),
+            'description_en' => Yii::t('main', 'Описание en'),
+            'status' => Yii::t('main', 'Статус'),
         ];
     }
 }

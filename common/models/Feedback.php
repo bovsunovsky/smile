@@ -56,12 +56,12 @@ class Feedback extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'product_id' => 'Product ID',
-            'user_name' => 'User Name',
-            'user_email' => 'User Email',
-            'created_at' => 'Created At',
-            'status' => 'Status',
-            'comment' => 'Comment',
+            'product_id' => Yii::t('main', 'Номер продукта'),
+            'user_name' => Yii::t('main', 'Имя пользователя'),
+            'user_email' => Yii::t('main', 'E-mail пользователя'),
+            'created_at' => Yii::t('main', 'Дата создания'),
+            'status' => Yii::t('main', 'Статус'),
+            'comment' => Yii::t('main', 'Комментарий'),
         ];
     }
 }
