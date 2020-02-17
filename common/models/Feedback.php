@@ -33,6 +33,7 @@ class Feedback extends \yii\db\ActiveRecord
             [['created_at'], 'safe'],
             [['user_name'], 'string', 'max' => 100],
             [['user_email'], 'string', 'max' => 150],
+            [['user_email'], 'email'],
         ];
     }
 
